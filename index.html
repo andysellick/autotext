@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" id="site" class="nojs">
+<head>
+    <title>Autotext</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="jquery.triangles.css"/>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1 class="js-text">Hello</h1>
+    <h1 class="js-text2">Hello</h1>
+    <h1 class="js-text3">Hello</h1>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.autotext.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.js-text').autotext();
+            $('.js-text2').autotext({
+                'output':['Is this the real life?','Is this just fantasy?','Caught in a landslide','No escape from reality.'],
+                'speed':50,
+                'pause':1000,
+                'cursor':'',
+                'deletetext':0
+            });
+            $('.js-text3').autotext({
+                'output':["I'm just a poor boy, nobody loves me","He's just a poor boy from a poor family","Spare him his life from this monstrosity."],
+                'speed':70,
+                'pause':2000,
+                'deleteSpeed':50
+            });
+        });
+    </script>
+</body>
+</html>
