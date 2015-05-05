@@ -18,6 +18,7 @@ Options
 		
 - output: array of strings, e.g. ['string 1,'string 2','string 3']
 - speed: speed of 'typing', milliseconds, defaults to 20
+- delayStart: milliseconds after page load to start of animation. Defaults to 0
 - pause: pause between typing of sentences, milliseconds, defaults to 500
 - deleteText: 1 to have text be deleted in the same way it was typed, 0 to not
 - deleteSpeed: speed at which text characters should be deleted, milliseconds
