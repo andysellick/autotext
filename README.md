@@ -5,8 +5,13 @@ Simple plugin to animate text being typed. Includes options to configure speed, 
 
 Usage
 -----
-    
-$('.js-text').autotext();
+```html
+<script>
+	$(document).ready(function(){
+		$('.js-text').autotext();
+	});
+</script>
+```
 
 Markup
 ------
@@ -24,3 +29,6 @@ Options
 - deleteSpeed: speed at which text characters should be deleted, milliseconds
 - loop: 1 to infinitely loop through the strings provided, 0 to stop at the last one
 - cursor: character to use as the cursor at the end of the line, defaults to "|"
+
+Example here: http://www.custarddoughnuts.co.uk/article/2015/7/10/plugin-month-autotext
+
